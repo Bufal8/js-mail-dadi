@@ -15,18 +15,21 @@
  */ 
 
 // generazione numero random da 1 a 6 utente
-let numero_utente = math.floor(math.random() * 6) + 1;
+const numero_utente = Math.floor(Math.random() * 6) + 1;
+console.log(numero_utente);
 // generazione numero random da 1 a 6 pc
-let numero_pc = math.floor(math.random() * 6) + 1;
+let numero_pc = Math.floor(Math.random() * 6) + 1;
+console.log(numero_pc);
 // confronto due numeri
     // SE numero_utente > numero_pc -----> HAI VINTO!!
 if(numero_utente > numero_pc){
-    console.log(`il tuo numero(${numero_utente}) è maggiore del numero del pc(${numero_pc}), HAI VINTO!!`)
+    console.log(`il tuo numero (${numero_utente}) è maggiore del numero del pc (${numero_pc}), HAI VINTO!!`)
 }
+    // ALTRIMENTI SE numero_utente = numero_pc -----> È UN PAREGGIO!!
 else if(numero_utente === numero_pc){
-    console.log(`il tuo numero(${numero_utente}) è uguale numero del pc(${numero_pc}), È UN PAREGGIO!!`)
-}
-else{
-    console.log(`il tuo numero(${numero_utente}) è minore del numero del pc(${numero_pc}), HAI PERSO :(`)
+    console.log(`il tuo numero (${numero_utente}) è uguale numero del pc (${numero_pc}), È UN PAREGGIO!!`)
 }
     // ALTRIMENTI ------> HAI PERSO :(
+else{
+    console.log(`il tuo numero (${numero_utente}) è minore del numero del pc (${numero_pc}), HAI PERSO :(`)
+}
